@@ -6,12 +6,11 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 14:20:18 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/17 00:23:30 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/17 04:23:08 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
-#include <stdio.h>
 
 static size_t	get_tab_size(const char *s, char c)
 {
