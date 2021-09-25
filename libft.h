@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 13:32:11 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/19 17:58:03 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/25 19:50:50 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 
 // Int functions
+int		ft_intlen(int n);
 int		ft_atoi(const char *str);
 
 // Fd functions
