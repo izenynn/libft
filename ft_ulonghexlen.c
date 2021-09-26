@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_intlen.c                                        :+:      :+:    :+:   */
+/*   ft_ulonghexlen.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/25 19:37:18 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/25 22:55:19 by dpoveda-         ###   ########.fr       */
+/*   Created: 2021/09/26 12:58:10 by dpoveda-          #+#    #+#             */
+/*   Updated: 2021/09/26 13:01:40 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_intlen(int n)
+int	ft_ulonghexlen(unsigned long n)
 {
 	int	cnt;
 
-	cnt = !n;
-	while (n)
+	cnt = 1;
+	while (n > 15)
 	{
-		n /= 10;
+		n /= 16;
 		cnt++;
 	}
 	return (cnt);
