@@ -6,7 +6,7 @@
 #    By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/14 10:39:45 by dpoveda-          #+#    #+#              #
-#    Updated: 2021/09/25 19:57:27 by dpoveda-         ###   ########.fr        #
+#    Updated: 2021/09/26 16:27:47 by dpoveda-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,8 @@ SRCS =	ft_islower.c			ft_isupper.c			ft_isspace.c		\
 		ft_lstnew.c				ft_lstadd_front.c		ft_lstadd_back.c	\
 		ft_lstsize.c			ft_lstlast.c			ft_lstdelone.c		\
 		ft_lstclear.c			ft_lstiter.c			ft_lstmap.c			\
-		ft_intlen.c
+		ft_intlen.c				ft_uintlen.c			ft_ulonglen.c	\
+		ft_uinthexlen.c			ft_ulonghexlen.c
 
 OBJS = $(SRCS:%.c=%.o)
 
