@@ -1,4 +1,5 @@
-# libft
+# 42 Cursus - libft
+
 ## Info
 
 My implementation of some useful C functions and some additional ones to use it in future projects of 42.
