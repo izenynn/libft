@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 13:32:11 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/25 19:50:50 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/27 12:01:03 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,14 @@ void	*ft_calloc(size_t count, size_t size);
 // Int functions
 int		ft_intlen(int n);
 int		ft_atoi(const char *str);
+
+// Uint functions
+int		ft_uintlen(unsigned int n);
+int		ft_uinthexlen(unsigned int n);
+
+// Ulong functions
+int		ft_ulonglen(unsigned long n);
+int		ft_ulonghexlen(unsigned long n);
 
 // Fd functions
 void	ft_putchar_fd(char c, int fd);
