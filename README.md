@@ -24,7 +24,7 @@ make
 #include <libft.h>
 ```
 
-- Or include only the part of the libft you are going to use
+- Or include only the part that you are going to use (list of functions below)
 
 ```c
 #include <libft/ft_char.h>
@@ -44,7 +44,7 @@ gcc example.c libft/libft.a -I libft/inc/
 
 - ✨ Magic ✨
 
-## List of functions included
+## List of functions
 
 ### ft_char
 - ft_islower
