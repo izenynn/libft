@@ -4,6 +4,32 @@
 
 My implementation of some useful C functions and some additional ones to use it in future projects of 42.
 
+## How to use
+
+- Clone libft to your project
+
+```sh
+git clone https://github.com/izenynn/libft.git
+```
+
+- Run make inside libft folder (make rules: all, clean, fclean, re)
+
+```sh
+make
+```
+
+- Add the libft.h header to your C files
+
+```c
+#include <libft.h>
+```
+
+- Make sure you add libft.a and you specify libft.h path (-I flag) when you compile
+
+```sh
+gcc example.c libft/libft.a -I libft/inc/
+```
+
 ## List of functions included
 
 ### char
