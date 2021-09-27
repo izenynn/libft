@@ -32,7 +32,6 @@ My implementation of some useful C functions and some additional ones to use it 
 - ft_substr
 - ft_strjoin
 - ft_strtrim
-- ft_itoa
 - ft_split
 - ft_strmapi
 - ft_striteri
@@ -47,9 +46,10 @@ My implementation of some useful C functions and some additional ones to use it 
 - ft_calloc
 
 ### int
+- ft_atoi
+- ft_itoa
 - ft_intlen
 - ft_intlen_base
-- ft_atoi
 
 ### unsigned int
 - ft_uintlen
