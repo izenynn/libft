@@ -4,9 +4,9 @@
 
 My implementation of some useful C functions and some additional ones to use it in future projects of 42.
 
-## Functions
+## List of functions included
 
-### Char functions
+### char
 - ft_islower
 - ft_isupper
 - ft_isspace
@@ -18,7 +18,7 @@ My implementation of some useful C functions and some additional ones to use it 
 - ft_tolower
 - ft_toupper
 
-### String functions
+### strings
 - ft_strlen
 - ft_strcpy
 - ft_strlcpy
@@ -37,7 +37,7 @@ My implementation of some useful C functions and some additional ones to use it 
 - ft_strmapi
 - ft_striteri
 
-### Memory functions
+### memory
 - ft_memset
 - ft_bzero
 - ft_memcpy
@@ -46,16 +46,26 @@ My implementation of some useful C functions and some additional ones to use it 
 - ft_memcmp
 - ft_calloc
 
-### Int functions
+### int
+- ft_intlen
+- ft_intlen_base
 - ft_atoi
 
-### Fd functions
+### unsigned int
+- ft_uintlen
+- ft_uintlen_base
+
+### unsigned long
+- ft_ulonglen
+- ft_ulonglen_base
+
+### fd
 - ft_putchar_fd
 - ft_putstr_fd
 - ft_putendl_fd
 - ft_putnbr_fd
 
-### Linked list functions
+### linked list
 - ft_lstnew
 - ft_lstadd_front
 - ft_lstsize
@@ -65,3 +75,6 @@ My implementation of some useful C functions and some additional ones to use it 
 - ft_lstclear
 - ft_lstiter
 - ft_lstmap
+
+### printf
+- ft_printf
