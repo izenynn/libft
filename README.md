@@ -4,6 +4,10 @@
 
 My implementation of some useful C functions and some additional ones to use it in future projects of 42.
 
+- Status: still updating (I use libft a lot so I keep improving it)
+- Result: 125%
+- Observations: (null)
+
 ## How to use
 
 - Clone libft into your project folder
