@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 13:32:11 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 13:19:46 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/27 14:56:35 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,11 +65,11 @@ int		ft_atoi(const char *str);
 
 // unsigned int
 int		ft_uintlen(unsigned int n);
-int		ft_uinthexlen(unsigned int n);
+int		ft_uintlen_base(unsigned int n, int base_len);
 
 // unsigned long
 int		ft_ulonglen(unsigned long n);
-int		ft_ulonghexlen(unsigned long n);
+int		ft_ulonglen_base(unsigned long n, int base_len);
 
 // put fd
 int		ft_putchar_fd(char c, int fd);

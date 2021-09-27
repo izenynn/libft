@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_uinthexlen.c                                    :+:      :+:    :+:   */
+/*   ft_uintlen_base.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/26 12:58:01 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/26 13:01:51 by dpoveda-         ###   ########.fr       */
+/*   Created: 2021/09/27 14:53:56 by dpoveda-          #+#    #+#             */
+/*   Updated: 2021/09/27 14:53:57 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_uinthexlen(unsigned int n)
+int	ft_uintlen_base(unsigned int n, int base_len)
 {
 	int	cnt;
 
 	cnt = 1;
-	while (n > 15)
+	while (n >= base_len)
 	{
-		n /= 16;
+		n /= base_len;
 		cnt++;
 	}
 	return (cnt);

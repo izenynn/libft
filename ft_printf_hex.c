@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 19:03:15 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 12:16:41 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/27 14:55:34 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ static int	ft_get_print_len(t_print *tab, int len)
 
 static void	ft_handle_zeros(t_print *tab, unsigned int n, int print_len)
 {
-	print_len -= ft_uinthexlen(n);
+	print_len -= ft_uintlen_base(n, 16);
 	if (tab->sharp)
 		print_len -= 2;
 	while (print_len-- > 0)
@@ -82,7 +82,7 @@ void	ft_printf_hex(t_print *tab, char flag)
 	int				print_len;
 
 	n = va_arg(tab->args, unsigned long);
-	print_len = ft_get_print_len(tab, ft_uinthexlen(n));
+	print_len = ft_get_print_len(tab, ft_uintlen_base(n, 16));
 	ft_handle_left(tab, print_len, flag, n);
 	pow = 1;
 	while (n / pow / 16)
