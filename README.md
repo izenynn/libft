@@ -30,6 +30,8 @@ make
 gcc example.c libft/libft.a -I libft/inc/
 ```
 
+- ✨ Magic ✨
+
 ## List of functions included
 
 ### char
