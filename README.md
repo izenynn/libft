@@ -137,3 +137,7 @@ gcc example.c libft/libft.a -I libft/inc/
 - `#` used with x or X specifiers the value is preceeded with 0x or 0X respectively for the values different than zero.
 - `(space)` if no sign is going to be written, a blank space is inserted before the value.
 - `+` forces to preceed the result with a plus or minus sign (+ or -) even for positive numbers. By default, only negative numbers are preceded with a - sign.
+
+##
+[![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/contains-17-coffee-cups.svg)](https://forthebadge.com)
