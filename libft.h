@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 13:32:11 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 12:18:03 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/27 13:19:46 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,10 +72,10 @@ int		ft_ulonglen(unsigned long n);
 int		ft_ulonghexlen(unsigned long n);
 
 // put fd
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char *s, int fd);
-void	ft_putendl_fd(char *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+int		ft_putchar_fd(char c, int fd);
+int		ft_putstr_fd(char *s, int fd);
+int		ft_putendl_fd(char *s, int fd);
+int		ft_putnbr_fd(int n, int fd);
 
 // linked list
 typedef struct s_list
