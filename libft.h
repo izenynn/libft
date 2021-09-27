@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 13:32:11 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 15:00:02 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:10:42 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,11 +72,18 @@ int		ft_uintlen_base(unsigned int n, int base_len);
 int		ft_ulonglen(unsigned long n);
 int		ft_ulonglen_base(unsigned long n, int base_len);
 
-// put fd
+// fd
 int		ft_putchar_fd(char c, int fd);
 int		ft_putstr_fd(char *s, int fd);
 int		ft_putendl_fd(char *s, int fd);
 int		ft_putnbr_fd(int n, int fd);
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1
+# endif
+# ifndef FD_SIZE
+#  define FD_SIZE 1
+# endif
+char	*get_next_line(int fd);
 
 // linked list
 typedef struct s_list
