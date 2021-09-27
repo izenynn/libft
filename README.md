@@ -6,7 +6,7 @@ My implementation of some useful C functions and some additional ones to use it 
 
 ## How to use
 
-- Clone libft to your project
+- Clone libft to your project folder
 
 ```sh
 git clone https://github.com/izenynn/libft.git
