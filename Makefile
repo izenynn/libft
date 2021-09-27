@@ -6,14 +6,14 @@
 #    By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/14 10:39:45 by dpoveda-          #+#    #+#              #
-#    Updated: 2021/09/27 19:48:16 by dpoveda-         ###   ########.fr        #
+#    Updated: 2021/09/27 22:22:28 by dpoveda-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # COMPILE
 NAME = libft.a
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -I./$(INCS_PATH)/
+CFLAGS = -Wall -Wextra -Werror
 ARFLAGS = -rcs
 
 # PATHS
@@ -85,7 +85,7 @@ $(NAME): $(OBJS)
 	ar $(ARFLAGS) $@ $^
 
 $(OBJS_PATH)/%.o: $(SRCS_PATH)/%.c | $(OBJS_DIRS)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@ -I $(INCS_PATH)
 
 $(OBJS_DIRS): | $(OBJS_PATH)
 	mkdir -p $(OBJS_DIRS) 2> /dev/null
