@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:12:33 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 15:12:36 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:27:02 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static char	*check_and_return(char **s, ssize_t n, int fd)
 	return (return_next_line(&s[fd]));
 }
 
-char	*get_next_line(int fd)
+char	*ft_get_next_line(int fd)
 {
 	char		*tmp;
 	char		*buf;
