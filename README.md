@@ -24,6 +24,18 @@ make
 #include <libft.h>
 ```
 
+- Or include only the part of the libft you are going to use
+
+```c
+#include <libft/ft_char.h>
+#include <libft/ft_str.h>
+#include <libft/ft_mem.h>
+#include <libft/ft_nbr.h>
+#include <libft/ft_fd.h>
+#include <libft/ft_lst.h>
+#include <libft/ft_printf.h>
+```
+
 - Make sure you add libft.a and you specify libft.h path (-I flag) when you compile
 
 ```sh
@@ -34,7 +46,7 @@ gcc example.c libft/libft.a -I libft/inc/
 
 ## List of functions included
 
-### char
+### ft_char
 - ft_islower
 - ft_isupper
 - ft_isspace
@@ -46,7 +58,7 @@ gcc example.c libft/libft.a -I libft/inc/
 - ft_tolower
 - ft_toupper
 
-### strings
+### ft_str
 - ft_strlen
 - ft_strcpy
 - ft_strlcpy
@@ -64,7 +76,7 @@ gcc example.c libft/libft.a -I libft/inc/
 - ft_strmapi
 - ft_striteri
 
-### memory
+### ft_mem
 - ft_memset
 - ft_bzero
 - ft_memcpy
@@ -73,27 +85,23 @@ gcc example.c libft/libft.a -I libft/inc/
 - ft_memcmp
 - ft_calloc
 
-### int
+### ft_nbr
 - ft_atoi
 - ft_itoa
 - ft_intlen
 - ft_intlen_base
-
-### unsigned int
 - ft_uintlen
 - ft_uintlen_base
-
-### unsigned long
 - ft_ulonglen
 - ft_ulonglen_base
 
-### fd
+### ft_fd
 - ft_putchar_fd
 - ft_putstr_fd
 - ft_putendl_fd
 - ft_putnbr_fd
 
-### linked list
+### ft_lst
 - ft_lstnew
 - ft_lstadd_front
 - ft_lstsize
@@ -104,5 +112,5 @@ gcc example.c libft/libft.a -I libft/inc/
 - ft_lstiter
 - ft_lstmap
 
-### printf
+### ft_printf
 - ft_printf
