@@ -6,7 +6,7 @@
 #    By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/14 10:39:45 by dpoveda-          #+#    #+#              #
-#    Updated: 2021/09/27 19:22:42 by dpoveda-         ###   ########.fr        #
+#    Updated: 2021/09/27 19:48:16 by dpoveda-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,9 +49,9 @@ SRCS_STR =	ft_strlen.c		ft_strcpy.c		ft_strlcpy.c	ft_strcat.c		\
 SRCS_MEM =	ft_memset.c		ft_bzero.c		ft_memcpy.c		ft_memmove.c	\
 			ft_memchr.c		ft_memcmp.c		ft_calloc.c
 
-SRCS_NBR =	ft_intlen.c			ft_intlen_base.c		ft_atoi.c			\
-			ft_uintlen.c		ft_uintlen_base.c		ft_ulonglen.c		\
-			ft_ulonglen_base.c
+SRCS_NBR =	ft_atoi.c			ft_itoa.c				ft_intlen.c			\
+			ft_intlen_base.c	ft_atoi.c				ft_uintlen.c		\
+			ft_uintlen_base.c		ft_ulonglen.c		ft_ulonglen_base.c
 
 SRCS_FD =	ft_putchar_fd.c		ft_putstr_fd.c		ft_putendl_fd.c			\
 			ft_putnbr_fd.c		ft_get_next_line.c
