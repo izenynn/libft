@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:45:10 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/19 11:07:29 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/27 21:54:46 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ static int	fill_tab(char const *s, char c, char **tab)
 		tab[i] = malloc(len + 1);
 		if (!tab[i])
 		{
-			while (--i >= 0)
-				free(tab[i]);
+			while (i)
+				free(tab[--i]);
 			free(tab);
 			return (1);
 		}
