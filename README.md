@@ -18,7 +18,7 @@ git clone https://github.com/izenynn/libft.git
 make
 ```
 
-- Add the libft.h header to your C files
+- Include libft.h in the header of your C file or files
 
 ```c
 #include <libft.h>
