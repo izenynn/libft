@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 13:32:11 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 14:56:35 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:00:02 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ void	*ft_calloc(size_t count, size_t size);
 
 // int
 int		ft_intlen(int n);
+int		ft_intlen_base(int n, int base_len);
 int		ft_atoi(const char *str);
 
 // unsigned int
