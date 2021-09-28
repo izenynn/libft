@@ -6,7 +6,7 @@
 #    By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/14 10:39:45 by dpoveda-          #+#    #+#              #
-#    Updated: 2021/09/27 22:22:28 by dpoveda-         ###   ########.fr        #
+#    Updated: 2021/09/28 15:35:47 by dpoveda-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,9 +60,9 @@ SRCS_LST =	ft_lstnew.c			ft_lstadd_front.c		ft_lstsize.c		\
 			ft_lstlast.c		ft_lstadd_back.c		ft_lstdelone.c		\
 			ft_lstclear.c		ft_lstiter.c			ft_lstmap.c
 
-SRCS_PRINTF =	ft_printf.c			ft_printf_tab.c		ft_printf_char.c	\
-				ft_printf_str.c		ft_printf_int.c		ft_printf_uint.c	\
-				ft_printf_ptr.c		ft_printf_hex.c
+SRCS_PRINTF =	ft_printf.c		ft_printf_tab_utils.c	ft_printf_char.c	\
+				ft_printf_str.c	ft_printf_int.c			ft_printf_uint.c	\
+				ft_printf_ptr.c	ft_printf_hex.c
 
 SRCS_NAME =	$(addprefix $(SRCS_CHAR_DIR)/, $(SRCS_CHAR))	\
 			$(addprefix $(SRCS_STR_DIR)/, $(SRCS_STR))		\

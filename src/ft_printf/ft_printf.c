@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 10:19:49 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 19:39:09 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/09/28 15:42:31 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,8 @@ static int	ft_eval_flags(t_print *tab, const char *format, int i)
 	{
 		if (format[i] == '.' && ++i)
 		{
-			if (format[i] >= '0' && format[i] <= '9')
-				while (format[i] >= '0' && format[i] <= '9')
-					tab->dot = tab->dot * 10 + format[i++] - '0';
+			while (format[i] >= '0' && format[i] <= '9')
+				tab->dot = tab->dot * 10 + format[i++] - '0';
 			tab->dot++;
 		}
 		if (format[i] == '-' && ++i)
