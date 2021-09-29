@@ -40,8 +40,6 @@ make
 #include <libft/ft_printf.h>
 ```
 
-- ✨ Magic ✨
-
 ## How to compile with libft
 
 ### Compile directly your .c files
@@ -52,7 +50,7 @@ make
 gcc (...)(.c files) -o (output file) ./libft/libft.a -I ./libft/inc
 ```
 
-###  Compile .o (for Makefiles)
+###  Compile objects (`.o`) (for Makefiles)
 
 - If you want to compile firts your .c files into `.o`, you will need to specify the `-c` flag (no linking) when compiling to `.o` files, and indicate the `libft.h` path with the `-I` flag
 
@@ -65,6 +63,8 @@ gcc -c (.c file) -o (.o output file) -I ./libft/inc
 ```sh
 gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 ```
+
+- ✨ Magic ✨
 
 ## List of functions
 
