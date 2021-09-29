@@ -8,7 +8,7 @@ My implementation of some useful C functions and some additional ones to use it 
 - Result: 125%
 - Observations: (null)
 
-## How to use
+## How to install and use
 
 - Clone libft into your project folder
 
@@ -40,13 +40,31 @@ make
 #include <libft/ft_printf.h>
 ```
 
-- Make sure you add libft.a and you specify libft.h path (-I flag) when you compile
+- ✨ Magic ✨
+
+## How to compile with libft
+
+### Compile directly your .c files
+
+- Just make sure you add libft (`libft.a`) and you specify `libft.h` path (`-I` flag) when you compile
 
 ```sh
-gcc example.c libft/libft.a -I libft/inc/
+gcc (...)(.c files) -o (output file) ./libft/libft.a -I ./libft/inc
 ```
 
-- ✨ Magic ✨
+###  Compile .o (for Makefiles)
+
+- If you want to compile firts your .c files into `.o`, you will need to specify the `-c` flag (no linking) when compiling to `.o` files, and indicate the `libft.h` path with the `-I` flag
+
+```sh
+gcc -c (.c file) -o (.o output file) -I ./libft/inc
+```
+
+- Now we will compile all the `.o` into a program, and do the linking part with `-L` and `-l`, just specify the `libft.a` path with the `-L` flag
+
+```sh
+gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
+```
 
 ## List of functions
 
