@@ -28,6 +28,7 @@ SRCS_MEM_DIR = ft_mem
 SRCS_NBR_DIR = ft_nbr
 SRCS_FD_DIR = ft_fd
 SRCS_LST_DIR = ft_lst
+SRCS_DLST_DIR = ft_dlst
 SRCS_PRINTF_DIR = ft_printf
 
 # OBJS DIR
@@ -60,6 +61,11 @@ SRCS_LST =	ft_lstnew.c			ft_lstadd_front.c		ft_lstsize.c		\
 			ft_lstlast.c		ft_lstadd_back.c		ft_lstdelone.c		\
 			ft_lstclear.c		ft_lstiter.c			ft_lstmap.c
 
+SRCS_DLST =	ft_dlstnew.c		ft_dlstadd_front.c		ft_dlstadd_back.c	\
+			ft_dlstsize.c		ft_dlstfirst.c			ft_dlstlast.c		\
+			ft_dlstdelone.c		ft_dlstclear.c			ft_dlstiter.c		\
+			ft_dlstmap.c
+
 SRCS_PRINTF =	ft_printf.c		ft_printf_tab_utils.c	ft_printf_char.c	\
 				ft_printf_str.c	ft_printf_int.c			ft_printf_uint.c	\
 				ft_printf_ptr.c	ft_printf_hex.c
@@ -70,6 +76,7 @@ SRCS_NAME =	$(addprefix $(SRCS_CHAR_DIR)/, $(SRCS_CHAR))	\
 			$(addprefix $(SRCS_NBR_DIR)/, $(SRCS_NBR))		\
 			$(addprefix $(SRCS_FD_DIR)/, $(SRCS_FD))		\
 			$(addprefix $(SRCS_LST_DIR)/, $(SRCS_LST))		\
+			$(addprefix $(SRCS_DLST_DIR)/, $(SRCS_DLST))	\
 			$(addprefix $(SRCS_PRINTF_DIR)/, $(SRCS_PRINTF))
 
 OBJS_NAME = $(SRCS_NAME:%.c=%.o)
