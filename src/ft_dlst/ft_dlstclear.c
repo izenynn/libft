@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/04 16:31:44 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/10/04 16:32:21 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/10/05 13:05:00 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_dlstclear(t_dlist **dlst, void (*del)(void *))
 {
 	void	*prev;
 
-	if(!dlst || !del)
+	if (!dlst || !del)
 		return ;
 	while (*dlst)
 	{
