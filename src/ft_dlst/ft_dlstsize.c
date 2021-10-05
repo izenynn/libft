@@ -14,6 +14,12 @@
 
 int	ft_dlstsize(t_dlist *dlst)
 {
-	// TODO: go to the start of the dlist and count from there
-	return (0);
+	size_t	len;
+
+	if (!dlst)
+		return (0);
+	len = 0;
+	while (dlst && ++len)
+		dlst = dlst->next;
+	return (len);
 }

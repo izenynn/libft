@@ -14,5 +14,14 @@
 
 void	ft_dlstadd_front(t_dlist **dlst, t_dlist *new)
 {
-	return ;
+	if (!dlst || !new)
+		return ;
+	if (*dlst)
+	{
+		new->next = *dlst;
+		(*dlst)->prev = new;
+		*dlst = new;
+	}
+	else
+		*dlst = new;
 }

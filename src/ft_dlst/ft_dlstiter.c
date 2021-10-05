@@ -14,5 +14,11 @@
 
 void	ft_dlstiter(t_dlist *dlst, void (*f)(void *))
 {
-	return ;
+	if (!dlst || !f)
+		return ;
+	while (dlst)
+	{
+		f(dlst->content);
+		dlst = dlst->next;
+	}
 }

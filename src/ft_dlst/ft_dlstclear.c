@@ -14,5 +14,16 @@
 
 void	ft_dlstclear(t_dlist **dlst, void (*del)(void *))
 {
-	return ;
+	void	*prev;
+
+	if(!dlst || !del)
+		return ;
+	while (*dlst)
+	{
+		del((*dlst)->content);
+		prev = *dlst;
+		*dlst = (*dlst)->next;
+		free(prev);
+	}
+	*dlst = NULL;
 }

@@ -14,5 +14,13 @@
 
 t_dlist	*ft_dlstnew(void *content)
 {
-	return (NULL);
+	t_dlist	*newdlst;
+
+	newdlst = (t_dlist *)malloc(sizeof(t_dlist));
+	if (!newdlst)
+		return (NULL);
+	newdlst->content = content;
+	newdlst->next = NULL;
+	newdlst->prev = NULL;
+	return (newdlst);
 }

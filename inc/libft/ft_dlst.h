@@ -24,9 +24,9 @@ typedef struct s_dlist
 }	t_dlist;
 
 t_dlist	*ft_dlstnew(void *content);
-void	*ft_dlstadd_front(t_dlist **dlst, t_dlist *new);
-void	*ft_dlstadd_back(t_dlist **dlst, t_dlist *new);
-int		*ft_dlstsize(t_dlist *dlst);
+void	ft_dlstadd_front(t_dlist **dlst, t_dlist *new);
+void	ft_dlstadd_back(t_dlist **dlst, t_dlist *new);
+int		ft_dlstsize(t_dlist *dlst);
 t_dlist	*ft_dlstlast(t_dlist *lst);
 t_dlist	*ft_dlstfirst(t_dlist *lst);
 void	ft_dlstdelone(t_dlist *dlst, void (*del)(void *));

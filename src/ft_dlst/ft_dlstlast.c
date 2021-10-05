@@ -14,5 +14,9 @@
 
 t_dlist	*ft_dlstlast(t_dlist *dlst)
 {
-	return (NULL);
+	if (!dlst)
+		return (NULL);
+	while (dlst->next)
+		dlst = dlst->next;
+	return (dlst);
 }

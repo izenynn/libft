@@ -12,7 +12,10 @@
 
 #include <libft/ft_dlst.h>
 
-void	ft_dlstiter(t_dlist *dlst, void (*f)(void *))
+void	ft_dlstdelone(t_dlist *dlst, void (*del)(void *))
 {
-	return ;
+	if (!dlst || !del)
+		return ;
+	del(dlst->content);
+	free(dlst);
 }

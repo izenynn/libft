@@ -14,5 +14,16 @@
 
 void	ft_dlstadd_back(t_dlist **dlst, t_dlist *new)
 {
-	return ;
+	t_dlist	*last;
+
+	if (!dlst || !new)
+		return ;
+	if (*dlst)
+	{
+		last = ft_dlstlast(*dlst);
+		last->next = new;
+		new->prev = last;
+	}
+	else
+		*dlst = new;
 }
