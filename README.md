@@ -37,6 +37,7 @@ make
 #include <libft/ft_nbr.h>
 #include <libft/ft_fd.h>
 #include <libft/ft_lst.h>
+#include <libft/ft_dlst.h>
 #include <libft/ft_printf.h>
 ```
 
@@ -134,6 +135,18 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 - ft_lstclear
 - ft_lstiter
 - ft_lstmap
+
+### ft_dlst
+- ft_dlstnew
+- ft_dlstadd_front
+- ft_dlstadd_back
+- ft_dlstsize
+- ft_dlstfirst
+- ft_dlstlast
+- ft_dlstdelone
+- ft_dlstclear
+- ft_dlstiter
+- ft_dlstmap
 
 ### ft_printf
 - ft_printf
