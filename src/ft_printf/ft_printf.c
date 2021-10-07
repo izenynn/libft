@@ -6,11 +6,20 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/25 10:19:49 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/28 15:42:31 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/10/07 11:08:19 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft/ft_printf.h>
+
+t_print	*ft_initialise_tab(t_print *tab);
+t_print	*ft_clear_flags_tab(t_print *tab);
+void	ft_printf_char(t_print *tab);
+void	ft_printf_str(t_print *tab);
+void	ft_printf_int(t_print *tab);
+void	ft_printf_uint(t_print *tab);
+void	ft_printf_ptr(t_print *tab);
+void	ft_printf_hex(t_print *tab, char flag);
 
 static int	ft_eval_format(t_print *tab, const char *format, int i)
 {
