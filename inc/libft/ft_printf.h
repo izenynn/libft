@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:57:26 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/10/07 11:07:55 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/10/07 11:23:32 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,7 @@ typedef struct s_print
 	int		is_zero;
 	int		perc;
 }	t_print;
+
+int	ft_printf(const char *format, ...);
 
 #endif
