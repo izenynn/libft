@@ -18,12 +18,12 @@
 
 typedef struct s_dlist
 {
-	void			*content;
+	void			*data;
 	struct s_dlist	*next;
 	struct s_dlist	*prev;
 }	t_dlist;
 
-t_dlist	*ft_dlstnew(void *content);
+t_dlist	*ft_dlstnew(void *data);
 void	ft_dlstadd_front(t_dlist **dlst, t_dlist *new);
 void	ft_dlstadd_back(t_dlist **dlst, t_dlist *new);
 int		ft_dlstsize(t_dlist *dlst);

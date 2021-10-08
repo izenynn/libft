@@ -16,6 +16,6 @@ void	ft_dlstdelone(t_dlist *dlst, void (*del)(void *))
 {
 	if (!dlst || !del)
 		return ;
-	del(dlst->content);
+	del(dlst->data);
 	free(dlst);
 }

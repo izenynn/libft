@@ -18,7 +18,7 @@ void	ft_dlstiter(t_dlist *dlst, void (*f)(void *))
 		return ;
 	while (dlst)
 	{
-		f(dlst->content);
+		f(dlst->data);
 		dlst = dlst->next;
 	}
 }

@@ -22,7 +22,7 @@ t_dlist	*ft_dlstmap(t_dlist *dlst, void *(*f)(void *), void (*del)(void *))
 	newdlst = NULL;
 	while (dlst)
 	{
-		new = ft_dlstnew(f(dlst->content));
+		new = ft_dlstnew(f(dlst->data));
 		if (!new)
 		{
 			ft_dlstclear(&newdlst, del);
