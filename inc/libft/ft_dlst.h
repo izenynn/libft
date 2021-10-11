@@ -31,7 +31,7 @@ t_dlist	*ft_dlstlast(t_dlist *lst);
 t_dlist	*ft_dlstfirst(t_dlist *lst);
 void	ft_dlstdelone(t_dlist *dlst, void (*del)(void *));
 void	ft_dlstclear(t_dlist **dlst, void (*del)(void *));
-void	ft_lstiter(t_dlist *dlst, void (*f)(void *));
+void	ft_dlstiter(t_dlist *dlst, void (*f)(void *));
 t_dlist	*ft_dlstmap(t_dlist *dlst, void *(*f)(void *), void (*del)(void *));
 
 #endif
