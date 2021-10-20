@@ -12,33 +12,33 @@
 
 #include <libft/ft_printf.h>
 
-static void	ft_handle_left_align(int d, t_print *tab)
+static void	ft_handle_left_align(t_print *tab)
 {
 	tab->wd--;
 	while (tab->wd-- > 0)
 	{
 		if (tab->zero)
-			tab->tlen += write(d, "0", 1);
+			tab->tlen += write(tab->d, "0", 1);
 		else
-			tab->tlen += write(d, " ", 1);
+			tab->tlen += write(tab->d, " ", 1);
 	}
 }
 
-static void	ft_handle_right_align(int d, t_print *tab)
+static void	ft_handle_right_align(t_print *tab)
 {
 	tab->wd--;
 	while (tab->wd-- > 0)
-		tab->tlen += write(d, " ", 1);
+		tab->tlen += write(tab->d, " ", 1);
 }
 
-void	ft_printf_char(int d, t_print *tab)
+void	ft_printf_char(t_print *tab)
 {
 	char	c;
 
 	c = va_arg(tab->args, int);
 	if ((tab->zero || tab->wd) && !tab->dash)
-		ft_handle_left_align(d, tab);
-	tab->tlen += write(d, &c, 1);
+		ft_handle_left_align(tab);
+	tab->tlen += write(tab->d, &c, 1);
 	if (tab->wd && tab->dash)
-		ft_handle_right_align(d, tab);
+		ft_handle_right_align(tab);
 }

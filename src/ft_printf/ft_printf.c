@@ -14,34 +14,34 @@
 
 t_print	*ft_initialise_tab(t_print *tab);
 t_print	*ft_clear_flags_tab(t_print *tab);
-void	ft_printf_char(int d, t_print *tab);
-void	ft_printf_str(int d, t_print *tab);
-void	ft_printf_int(int d, t_print *tab);
-void	ft_printf_uint(int d, t_print *tab);
-void	ft_printf_ptr(int d, t_print *tab);
-void	ft_printf_hex(int d, t_print *tab, char flag);
+void	ft_printf_char(t_print *tab);
+void	ft_printf_str(t_print *tab);
+void	ft_printf_int(t_print *tab);
+void	ft_printf_uint(t_print *tab);
+void	ft_printf_ptr(t_print *tab);
+void	ft_printf_hex(t_print *tab, char flag);
 
-static int	ft_eval_format(int d, t_print *tab, const char *format, int i)
+static int	ft_eval_format(t_print *tab, const char *format, int i)
 {
 	if (format[i] == 'c')
-		ft_printf_char(d, tab);
+		ft_printf_char(tab);
 	else if (format[i] == 's')
-		ft_printf_str(d, tab);
+		ft_printf_str(tab);
 	else if (format[i] == 'p')
-		ft_printf_ptr(d, tab);
+		ft_printf_ptr(tab);
 	else if (format[i] == 'd' || format[i] == 'i')
-		ft_printf_int(d, tab);
+		ft_printf_int(tab);
 	else if (format[i] == 'u')
-		ft_printf_uint(d, tab);
+		ft_printf_uint(tab);
 	else if (format[i] == 'x' || format[i] == 'X')
-		ft_printf_hex(d, tab, format[i]);
+		ft_printf_hex(tab, format[i]);
 	else if (format[i] == '%')
-		tab->tlen += write(d, "%", 1);
+		tab->tlen += write(tab->d, "%", 1);
 	ft_clear_flags_tab(tab);
 	return (i);
 }
 
-static int	ft_eval_flags(int d, t_print *tab, const char *format, int i)
+static int	ft_eval_flags(t_print *tab, const char *format, int i)
 {
 	while (!ft_strchr("cspdiuxX%", format[i]))
 	{
@@ -65,7 +65,7 @@ static int	ft_eval_flags(int d, t_print *tab, const char *format, int i)
 			while (format[i] >= '0' && format[i] <= '9')
 				tab->wd = tab->wd * 10 + format[i++] - '0';
 	}
-	return (ft_eval_format(d, tab, format, i));
+	return (ft_eval_format(tab, format, i));
 }
 
 static int	handle_printf(int d, const char *format, va_list args)
@@ -78,15 +78,16 @@ static int	handle_printf(int d, const char *format, va_list args)
 	if (!tab)
 		return (-1);
 	ft_initialise_tab(tab);
+	tab->d = d;
 	va_copy(tab->args, args);
 	ret = 0;
 	i = -1;
 	while (format[++i])
 	{
 		if (format[i] == '%' && format[i + 1])
-			i = ft_eval_flags(d, tab, format, i + 1);
+			i = ft_eval_flags(tab, format, i + 1);
 		else if (format[i] != '%')
-			ret += write(d, &format[i], 1);
+			ret += write(tab->d, &format[i], 1);
 	}
 	va_end(tab->args);
 	ret += tab->tlen;

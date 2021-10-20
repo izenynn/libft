@@ -22,6 +22,7 @@
 typedef struct s_print
 {
 	va_list	args;
+	int		d;
 	int		wd;
 	int		dot;
 	int		dash;

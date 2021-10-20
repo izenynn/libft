@@ -35,30 +35,30 @@ static int	ft_get_print_len(t_print *tab, int len)
 	return (print_len);
 }
 
-static void	ft_handle_left_align(int d, t_print *tab, int print_len)
+static void	ft_handle_left_align(t_print *tab, int print_len)
 {
 	tab->wd -= print_len;
 	while (tab->wd-- > 0)
-		tab->tlen += write(d, " ", 1);
+		tab->tlen += write(tab->d, " ", 1);
 }
 
-static void	ft_handle_zeros(int d, t_print *tab, unsigned int n, int print_len)
+static void	ft_handle_zeros(t_print *tab, unsigned int n, int print_len)
 {
 	print_len -= ft_uintlen(n);
 	while (print_len-- > 0)
-		tab->tlen += write(d, "0", 1);
+		tab->tlen += write(tab->d, "0", 1);
 }
 
-static void	ft_handle_right_align(int d, t_print *tab, int print_len)
+static void	ft_handle_right_align(t_print *tab, int print_len)
 {
 	if (!tab->dash)
 		return ;
 	tab->wd -= print_len;
 	while (tab->wd-- > 0)
-		tab->tlen += write(d, " ", 1);
+		tab->tlen += write(tab->d, " ", 1);
 }
 
-void	ft_printf_uint(int d, t_print *tab)
+void	ft_printf_uint(t_print *tab)
 {
 	unsigned int	n;
 	unsigned int	pow_ten;
@@ -69,16 +69,16 @@ void	ft_printf_uint(int d, t_print *tab)
 	pow_ten = 1;
 	print_len = ft_get_print_len(tab, ft_uintlen(n));
 	if (!tab->dash)
-		ft_handle_left_align(d, tab, print_len);
-	ft_handle_zeros(d, tab, n, print_len);
+		ft_handle_left_align(tab, print_len);
+	ft_handle_zeros(tab, n, print_len);
 	while (n / pow_ten / 10)
 		pow_ten *= 10;
 	while (pow_ten)
 	{
 		c = n / pow_ten + '0';
-		tab->tlen += write(d, &c, 1);
+		tab->tlen += write(tab->d, &c, 1);
 		n %= pow_ten;
 		pow_ten /= 10;
 	}
-	ft_handle_right_align(d, tab, print_len);
+	ft_handle_right_align(tab, print_len);
 }
