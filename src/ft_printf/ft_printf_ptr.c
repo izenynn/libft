@@ -35,32 +35,32 @@ static int	ft_get_print_len(t_print *tab, int len)
 	return (print_len);
 }
 
-static void	ft_handle_left_align(t_print *tab, int print_len)
+static void	ft_handle_left_align(int d, t_print *tab, int print_len)
 {
 	if (tab->dash)
 		return ;
 	tab->wd -= print_len + 2;
 	while (tab->wd-- > 0)
-		tab->tlen += write(1, " ", 1);
+		tab->tlen += write(d, " ", 1);
 }
 
-static void	ft_handle_zeros(t_print *tab, unsigned long n, int print_len)
+static void	ft_handle_zeros(int d, t_print *tab, unsigned long n, int print_len)
 {
 	print_len -= ft_ulonglen_base(n, 16);
 	while (print_len-- > 0)
-		tab->tlen += write(1, "0", 1);
+		tab->tlen += write(d, "0", 1);
 }
 
-static void	ft_handle_right_align(t_print *tab, int print_len)
+static void	ft_handle_right_align(int d, t_print *tab, int print_len)
 {
 	if (!tab->dash)
 		return ;
 	tab->wd -= print_len + 2;
 	while (tab->wd-- > 0)
-		tab->tlen += write(1, " ", 1);
+		tab->tlen += write(d, " ", 1);
 }
 
-void	ft_printf_ptr(t_print *tab)
+void	ft_printf_ptr(int d, t_print *tab)
 {
 	unsigned long	n;
 	unsigned long	pow;
@@ -69,9 +69,9 @@ void	ft_printf_ptr(t_print *tab)
 
 	n = va_arg(tab->args, unsigned long);
 	print_len = ft_get_print_len(tab, ft_ulonglen_base(n, 16));
-	ft_handle_left_align(tab, print_len);
-	tab->tlen += write(1, "0x", 2);
-	ft_handle_zeros(tab, n, print_len);
+	ft_handle_left_align(d, tab, print_len);
+	tab->tlen += write(d, "0x", 2);
+	ft_handle_zeros(d, tab, n, print_len);
 	pow = 1;
 	while (n / pow / 16)
 		pow *= 16;
@@ -82,9 +82,9 @@ void	ft_printf_ptr(t_print *tab)
 			c += '0';
 		else
 			c += 87;
-		tab->tlen += write(1, &c, 1);
+		tab->tlen += write(d, &c, 1);
 		n %= pow;
 		pow /= 16;
 	}
-	ft_handle_right_align(tab, print_len);
+	ft_handle_right_align(d, tab, print_len);
 }

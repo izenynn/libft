@@ -21,26 +21,26 @@ static size_t	ft_handle_dot(t_print *tab, size_t print_len)
 	return (print_len);
 }
 
-static void	ft_handle_left_align(t_print *tab, size_t print_len)
+static void	ft_handle_left_align(int d, t_print *tab, size_t print_len)
 {
 	tab->wd -= print_len;
 	while (tab->wd-- > 0)
 	{
 		if (tab->zero)
-			tab->tlen += write(1, "0", 1);
+			tab->tlen += write(d, "0", 1);
 		else
-			tab->tlen += write(1, " ", 1);
+			tab->tlen += write(d, " ", 1);
 	}
 }
 
-static void	ft_handle_right_align(t_print *tab, size_t print_len)
+static void	ft_handle_right_align(int d, t_print *tab, size_t print_len)
 {
 	tab->wd -= print_len;
 	while (tab->wd-- > 0)
-		tab->tlen += write(1, " ", 1);
+		tab->tlen += write(d, " ", 1);
 }
 
-void	ft_printf_str(t_print *tab)
+void	ft_printf_str(int d, t_print *tab)
 {
 	char	*s;
 	size_t	print_len;
@@ -48,15 +48,15 @@ void	ft_printf_str(t_print *tab)
 	s = va_arg(tab->args, char *);
 	if (!s)
 	{
-		tab->tlen += write(1, "(null)", 6);
+		tab->tlen += write(d, "(null)", 6);
 		return ;
 	}
 	print_len = ft_strlen(s);
 	if (tab->dot)
 		print_len = ft_handle_dot(tab, print_len);
 	if ((tab->zero || tab->wd) && !tab->dash)
-		ft_handle_left_align(tab, print_len);
-	tab->tlen += write(1, s, print_len);
+		ft_handle_left_align(d, tab, print_len);
+	tab->tlen += write(d, s, print_len);
 	if (tab->wd && tab->dash)
-		ft_handle_right_align(tab, print_len);
+		ft_handle_right_align(d, tab, print_len);
 }

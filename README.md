@@ -150,6 +150,7 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 
 ### ft_printf
 - ft_printf
+- ft_dprintf
 
 ## ft_printf flags
 

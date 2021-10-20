@@ -36,5 +36,6 @@ typedef struct s_print
 }	t_print;
 
 int	ft_printf(const char *format, ...);
+int	ft_dprintf(int d, const char *format, ...);
 
 #endif
