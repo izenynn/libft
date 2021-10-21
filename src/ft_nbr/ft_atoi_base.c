@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 00:18:58 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/10/21 00:18:59 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/10/21 17:33:48 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ static int	get_base_index(char c, const char *base)
 	return (cnt);
 }
 
-static int	str_to_int(const char *n, const char *base, long int pow, int base_l)
+static int	str_to_int(const char *n, const char *base, long int pow,
+	int base_l)
 {
 	int	ret;
 
