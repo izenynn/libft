@@ -15,9 +15,9 @@
 int	ft_atoi(const char *str)
 {
 	short			sign;
-	unsigned long	result;
+	unsigned long	ret;
 
-	result = 0;
+	ret = 0;
 	sign = 1;
 	while (ft_isspace(*str))
 		str++;
@@ -26,6 +26,6 @@ int	ft_atoi(const char *str)
 	else if (*str == '+')
 		str++;
 	while (*str >= '0' && *str <= '9')
-		result = result * 10 + ((unsigned long)*str++ - '0');
-	return ((int)(result * sign));
+		ret = ret * 10 + ((unsigned long)*str++ - '0');
+	return ((int)(ret * sign));
 }

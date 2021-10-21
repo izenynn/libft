@@ -18,6 +18,8 @@ int		ft_intlen(int n);
 int		ft_intlen_base(int n, int base_len);
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
+int		ft_atoi_base(const char *str, const char *base);
+char	*ft_itoa_base(int n, const char *base);
 
 // unsigned int
 int		ft_uintlen(unsigned int n);
