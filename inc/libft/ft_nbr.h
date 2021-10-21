@@ -20,6 +20,7 @@ int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
 int		ft_atoi_base(const char *str, const char *base);
 char	*ft_itoa_base(int n, const char *base);
+char	*ft_convert_base(char *c, char *base_from, char *base_to);
 
 // unsigned int
 int		ft_uintlen(unsigned int n);

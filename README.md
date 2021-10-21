@@ -114,6 +114,7 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 - ft_itoa
 - ft_atoi_base
 - ft_itoa_base
+- ft_convert_base
 - ft_intlen
 - ft_intlen_base
 - ft_uintlen
