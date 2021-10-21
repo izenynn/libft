@@ -19,7 +19,7 @@ char	*ft_strrev(char *s)
 	char	tmp;
 
 	start = s;
-	end = ft_strlen(s) - 1;
+	end = s + (ft_strlen(s) - 1);
 	while (start < end)
 	{
 		tmp = *start;
