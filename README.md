@@ -98,6 +98,8 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 - ft_split
 - ft_strmapi
 - ft_striteri
+- ft_strmap
+- ft_striter
 - ft_strrev
 
 ### ft_mem

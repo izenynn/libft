@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:45:11 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 19:25:44 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/10/21 23:37:55 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char	*ft_strmap(char const *s, char (*f)(char));
+void	ft_striter(char *s, void (*f)(char *));
 char	*ft_strrev(char *s);
 
 #endif
