@@ -72,16 +72,16 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 ### ft_char
 | Function | Description | Prototype |
 | --- | --- | --- |
-| [ft_islower](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_islower.c) | return 0 or 1, is c a lower case letter? | `int ft_isalpha(int c);` |
-- ft_isupper
-- ft_isspace
-- ft_isalpha
-- ft_isdigit
-- ft_isalnum
-- ft_isascii
-- ft_isprint
-- ft_tolower
-- ft_toupper
+| [ft_islower](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_islower.c) | return 0 or 1, is `c` a lower case letter? | `int ft_islower(int c);` |
+| [ft_isupper](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isupper.c) | return 0 or 1, is `c` a upper case letter? | `int ft_isupper(int c);` |
+| [ft_isspace](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isspace.c) | return 0 or 1, is `c` a space character? | `int ft_isspace(int c);` |
+| [ft_isalpha](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isalpha.c) | return 0 or 1, is `c` a letter? | `int ft_isalpha(int c);` |
+| [ft_isdigit](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isdigit.c) | return 0 or 1, is `c` a digit? | `int ft_isdigit(int c);` |
+| [ft_isalnum](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isalnum.c) | return 0 or 1, is `c` a letter or digit? | `int ft_isalnum(int c);` |
+| [ft_isascii](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isascii.c) | return 0 or 1, is `c` an ascii character? | `int ft_isascii(int c);` |
+| [ft_isprint](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isprint.c) | return 0 or 1, is `c` a printable character? | `int ft_isprint(int c);` |
+| [ft_tolower](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_tolower.c) | return `c` in lower case | `int ft_tolower(int c);` |
+| [ft_toupper](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_toupper.c) | return `c` in upper case | `int ft_toupper(int c);` |
 
 ### ft_str
 - ft_strlen
