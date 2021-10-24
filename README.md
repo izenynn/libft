@@ -70,7 +70,9 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 ## List of functions
 
 ### ft_char
-- ft_islower
+| Function | Description | Prototype |
+| --- | --- | --- |
+| [ft_islower](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_islower.c) | return 0 or 1, is c a lower case letter? | `int ft_isalpha(int c);` |
 - ft_isupper
 - ft_isspace
 - ft_isalpha
