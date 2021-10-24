@@ -69,9 +69,11 @@ SRCS_DLST =	ft_dlstnew.c		ft_dlstadd_front.c		ft_dlstadd_back.c	\
 			ft_dlstdelone.c		ft_dlstclear.c			ft_dlstiter.c		\
 			ft_dlstmap.c
 
-SRCS_PRINTF =	ft_printf.c		ft_printf_tab_utils.c	ft_printf_char.c	\
-				ft_printf_str.c	ft_printf_int.c			ft_printf_uint.c	\
-				ft_printf_ptr.c	ft_printf_hex.c
+SRCS_PRINTF =	ft_printf.c					ft_dprintf.c					\
+				ft_handle_dprintf.c			ft_printf_tab_utils.c			\
+				ft_printf_char.c			ft_printf_str.c					\
+				ft_printf_int.c				ft_printf_uint.c				\
+				ft_printf_ptr.c				ft_printf_hex.c
 
 SRCS_NAME =	$(addprefix $(SRCS_CHAR_DIR)/, $(SRCS_CHAR))	\
 			$(addprefix $(SRCS_STR_DIR)/, $(SRCS_STR))		\
