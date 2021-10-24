@@ -55,7 +55,7 @@ static int	fill_tab(char const *s, char c, char **tab)
 	return (0);
 }
 
-char	**ft_split(char const *s, char c)
+char	**ft_split(const char *s, char c)
 {
 	char	**tab;
 
