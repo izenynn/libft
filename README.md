@@ -84,6 +84,8 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 | [ft_toupper](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_toupper.c) | return `c` in upper case | `int ft_toupper(int c)` |
 
 ### ft_str
+| Function | Description | Prototype |
+| --- | --- | --- |
 | [ft_strlen](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strlen.c) | return len of `s` | `size_t ft_strlen(const char *s)` |
 | [ft_strcpy](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strcpy.c) | `man strcpy` | `char *ft_strcpy(char *dst, const char *src)` |
 | [ft_strlcpy](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strlcpy.c) | `man strlcpy` | `size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)` |
