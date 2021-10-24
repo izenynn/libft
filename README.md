@@ -72,37 +72,37 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 ### ft_char
 | Function | Description | Prototype |
 | --- | --- | --- |
-| [ft_islower](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_islower.c) | return 0 or 1, is `c` a lower case letter? | `int ft_islower(int c);` |
-| [ft_isupper](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isupper.c) | return 0 or 1, is `c` a upper case letter? | `int ft_isupper(int c);` |
-| [ft_isspace](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isspace.c) | return 0 or 1, is `c` a space character? | `int ft_isspace(int c);` |
-| [ft_isalpha](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isalpha.c) | return 0 or 1, is `c` a letter? | `int ft_isalpha(int c);` |
-| [ft_isdigit](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isdigit.c) | return 0 or 1, is `c` a digit? | `int ft_isdigit(int c);` |
-| [ft_isalnum](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isalnum.c) | return 0 or 1, is `c` a letter or digit? | `int ft_isalnum(int c);` |
-| [ft_isascii](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isascii.c) | return 0 or 1, is `c` an ascii character? | `int ft_isascii(int c);` |
-| [ft_isprint](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isprint.c) | return 0 or 1, is `c` a printable character? | `int ft_isprint(int c);` |
-| [ft_tolower](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_tolower.c) | return `c` in lower case | `int ft_tolower(int c);` |
-| [ft_toupper](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_toupper.c) | return `c` in upper case | `int ft_toupper(int c);` |
+| [ft_islower](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_islower.c) | return 0 or 1, is `c` a lower case letter? | `int ft_islower(int c)` |
+| [ft_isupper](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isupper.c) | return 0 or 1, is `c` a upper case letter? | `int ft_isupper(int c)` |
+| [ft_isspace](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isspace.c) | return 0 or 1, is `c` a space character? | `int ft_isspace(int c)` |
+| [ft_isalpha](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isalpha.c) | return 0 or 1, is `c` a letter? | `int ft_isalpha(int c)` |
+| [ft_isdigit](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isdigit.c) | return 0 or 1, is `c` a digit? | `int ft_isdigit(int c)` |
+| [ft_isalnum](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isalnum.c) | return 0 or 1, is `c` a letter or digit? | `int ft_isalnum(int c)` |
+| [ft_isascii](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isascii.c) | return 0 or 1, is `c` an ascii character? | `int ft_isascii(int c)` |
+| [ft_isprint](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isprint.c) | return 0 or 1, is `c` a printable character? | `int ft_isprint(int c)` |
+| [ft_tolower](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_tolower.c) | return `c` in lower case | `int ft_tolower(int c)` |
+| [ft_toupper](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_toupper.c) | return `c` in upper case | `int ft_toupper(int c)` |
 
 ### ft_str
-- ft_strlen
-- ft_strcpy
-- ft_strlcpy
-- ft_strcat
-- ft_strlcat
-- ft_strchr
-- ft_strrchr
-- ft_strncmp
-- ft_strnstr
-- ft_strdup
-- ft_substr
-- ft_strjoin
-- ft_strtrim
-- ft_split
-- ft_strmapi
-- ft_striteri
-- ft_strmap
-- ft_striter
-- ft_strrev
+| [ft_strlen](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strlen.c) | return len of `s` | `size_t ft_strlen(const char *s)` |
+| [ft_strcpy](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strcpy.c) | `man strcpy` | `char *ft_strcpy(char *dst, const char *src)` |
+| [ft_strlcpy](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strlcpy.c) | `man strlcpy` | `size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)` |
+| [ft_strcat](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strcat.c) | `man strcat` | `char *ft_strcat(char *s1, const char *s2)` |
+| [ft_strlcat](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strlcat.c) | `man strlcat` | `size_t ft_strlcat(char *dst, const char *src, size_t dstsize)` |
+| [ft_strchr](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strchr.c) | `man strchr` | `char *ft_strchr(const char *s, int c)` |
+| [ft_strrchr](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strrchr.c) | `man strrchr` | `char *ft_strrchr(const char *s, int c)` |
+| [ft_strncmp](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strncmp.c) | `man strncmp` | `int ft_strncmp(const char *s1, const char *s2, size_t n)` |
+| [ft_strnstr](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strnstr.c) | `man strnstr` | `char *ft_strnstr(const char *haystack, const char *needle, size_t len)` |
+| [ft_strdup](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strdup.c) | `man strdup` | `char *ft_strdup(const char *s1)` |
+| [ft_substr](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_substr.c) | return a sub string of `s` | `char *ft_substr(const char *s, unsigned int start, size_t len)` |
+| [ft_strjoin](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strjoin.c) | returns a new string joining `s1` and `s2` | `char *ft_strjoin(const char *s1, const char *s2)` |
+| [ft_strtrim](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strtrim.c) | returns a trimed str (triming `set` chars) | `char *ft_strtrim(const char *s1, const char *set)` |
+| [ft_split](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_split.c) | splits a string using `c` as separator | `char **ft_split(const char *s1, const char *set)` |
+| [ft_strmap](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strmap.c) | maps a new str iterating `s` with `f` | `char *ft_strmap(const char *s, char (*f)(char))` |
+| [ft_strmapi](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strmapi.c) | maps a new str iterating `s` with `f` | `char *ft_strmapi(const char *s, char (*f)(unsigned int, char))` |
+| [ft_striter](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_striter.c) | iterates `s` wiht `f` | `void ft_striter(char *s, void (*f)(char *))` |
+| [ft_striteri](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_striteri.c) | iterates `s` wiht `f` | `void ft_striteri(char *s, void (*f)(unsigned int, char *))` |
+| [ft_strrev](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strrev.c) | reverts a string | `char *ft_strrev(char *s)` |
 
 ### ft_mem
 - ft_memset
