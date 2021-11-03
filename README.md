@@ -114,6 +114,7 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 - ft_memchr
 - ft_memcmp
 - ft_calloc
+- ft_realloc
 
 ### ft_nbr
 - ft_atoi
