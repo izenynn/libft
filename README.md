@@ -73,11 +73,13 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 - [ft_islower](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_islower.c) - `int ft_islower(int c)`
 - [ft_isupper](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isupper.c) - `int ft_isupper(int c)`
 - [ft_isspace](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isspace.c) - `int ft_isspace(int c)`
+- [ft_isblank](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isspace.c) - `int ft_isblank(int c)`
 - [ft_isalpha](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isalpha.c) - `int ft_isalpha(int c)`
 - [ft_isdigit](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isdigit.c) - `int ft_isdigit(int c)`
 - [ft_isalnum](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isalnum.c) - `int ft_isalnum(int c)`
 - [ft_isascii](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isascii.c) - `int ft_isascii(int c)`
 - [ft_isprint](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_isprint.c) - `int ft_isprint(int c)`
+- [ft_iscntrl](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_iscntrl.c) - `int ft_iscntrl(int c)`
 - [ft_tolower](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_tolower.c) - `int ft_tolower(int c)`
 - [ft_toupper](https://github.com/izenynn/libft/blob/main/src/ft_char/ft_toupper.c) - `int ft_toupper(int c)`
 
