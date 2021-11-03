@@ -15,17 +15,28 @@
 int	ft_atoi(const char *str)
 {
 	short			sign;
-	unsigned long	ret;
+	unsigned char	digit;
+	unsigned long	result;
 
-	ret = 0;
+	result = 0;
 	sign = 1;
-	while (ft_isspace(*str))
+	while (*str == ' ' || *str == '\n' || *str == '\t'
+		|| *str == '\f' || *str == '\v' || *str == '\r')
 		str++;
 	if (*str == '-' && str++)
 		sign = -1;
 	else if (*str == '+')
 		str++;
-	while (*str >= '0' && *str <= '9')
-		ret = ret * 10 + ((unsigned long)*str++ - '0');
-	return ((int)(ret * sign));
+	while (1)
+	{
+		digit = *str++ - '0';
+		if (digit > 9)
+			break ;
+		result = result * 10 + digit;
+		if (result > 2147483647 && sign == 1)
+			return (-1);
+		if (result > 2147483648 && sign == -1)
+			return (0);
+	}
+	return (result * sign);
 }
