@@ -10,18 +10,33 @@
 #                                                                              #
 # **************************************************************************** #
 
-# COMPILE
+# **************************************************************************** #
+#                                   PROGRAM                                    #
+# **************************************************************************** #
+
 NAME = libft.a
+
+# **************************************************************************** #
+#                                   COMPILER                                   #
+# **************************************************************************** #
+
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 ARFLAGS = -rcs
 
-# PATHS
+# **************************************************************************** #
+#                                    PATHS                                     #
+# **************************************************************************** #
+
 INCS_PATH = inc
 SRCS_PATH = src
 OBJS_PATH = obj
 
-# SRCS DIR
+# **************************************************************************** #
+#                                   SOURCES                                    #
+# **************************************************************************** #
+
+# SRCS DIRS
 SRCS_CHAR_DIR = ft_char
 SRCS_STR_DIR = ft_str
 SRCS_MEM_DIR = ft_mem
@@ -36,6 +51,7 @@ OBJS_DIRS_NAME =	$(SRCS_CHAR_DIR)	$(SRCS_STR_DIR)		$(SRCS_MEM_DIR)	\
 					$(SRCS_NBR_DIR)		$(SRCS_FD_DIR)		$(SRCS_LST_DIR)	\
 					$(SRCS_DLST_DIR)	$(SRCS_PRINTF_DIR)
 
+# OBJS DIRS IN OBJ PATH
 OBJS_DIRS = $(addprefix $(OBJS_PATH)/, $(OBJS_DIRS_NAME))
 
 # SRC FILES
@@ -75,6 +91,7 @@ SRCS_PRINTF =	ft_printf.c					ft_dprintf.c					\
 				ft_printf_int.c				ft_printf_uint.c				\
 				ft_printf_ptr.c				ft_printf_hex.c
 
+# SRC FILES AND SRCS DIRS
 SRCS_NAME =	$(addprefix $(SRCS_CHAR_DIR)/, $(SRCS_CHAR))	\
 			$(addprefix $(SRCS_STR_DIR)/, $(SRCS_STR))		\
 			$(addprefix $(SRCS_MEM_DIR)/, $(SRCS_MEM))		\
@@ -84,10 +101,16 @@ SRCS_NAME =	$(addprefix $(SRCS_CHAR_DIR)/, $(SRCS_CHAR))	\
 			$(addprefix $(SRCS_DLST_DIR)/, $(SRCS_DLST))	\
 			$(addprefix $(SRCS_PRINTF_DIR)/, $(SRCS_PRINTF))
 
+# OBJS NAME
 OBJS_NAME = $(SRCS_NAME:%.c=%.o)
 
+# ADD PATH TO SRCS AND OBJS
 SRCS = $(addprefix $(SRCS_PATH)/, $(SRCS_NAME));
 OBJS = $(addprefix $(OBJS_PATH)/, $(OBJS_NAME));
+
+# **************************************************************************** #
+#                                    RULES                                     #
+# **************************************************************************** #
 
 .PHONY: all clean fclean re
 
