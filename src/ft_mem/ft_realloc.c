@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 20:50:28 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/11/03 20:50:29 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2021/11/09 21:33:11 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ void	*ft_realloc(void *ptr, size_t size)
 	new = malloc(size);
 	if (!new)
 		return (NULL);
+	ft_memcpy(new, ptr, size);
 	free(ptr);
 	ptr = NULL;
-	ft_memcpy(new, ptr, size);
 	return (new);
 }
