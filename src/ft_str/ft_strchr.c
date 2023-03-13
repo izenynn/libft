@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:46:36 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/17 17:46:37 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:11:09 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	if (c == '\0')
+	if ((char)c == '\0')
 		return ((char *)&s[ft_strlen(s)]);
 	while (*s)
 	{
