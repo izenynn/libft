@@ -6,11 +6,11 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:47:43 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/17 17:47:44 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:29:25 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft/ft_str.h>
+#include "libft/ft_str.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

@@ -6,11 +6,11 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:45:55 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/17 17:45:56 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:16:33 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft/ft_char.h>
+#include "libft/ft_char.h"
 
 int	ft_tolower(int c)
 {

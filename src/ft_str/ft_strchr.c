@@ -6,11 +6,11 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:46:36 by dpoveda-          #+#    #+#             */
-/*   Updated: 2023/03/13 17:11:09 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:26:39 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft/ft_str.h>
+#include "libft/ft_str.h"
 
 char	*ft_strchr(const char *s, int c)
 {

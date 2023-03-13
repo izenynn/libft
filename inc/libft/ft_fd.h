@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 15:54:51 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 15:56:11 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:14:27 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		ft_putnbr_fd(int n, int fd);
 
 // ft_get_next_line
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1
+#  define BUFFER_SIZE 128
 # endif
 
 # ifndef FD_SIZE

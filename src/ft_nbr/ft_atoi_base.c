@@ -6,12 +6,12 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 00:18:58 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/10/21 17:33:48 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:25:09 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft/ft_char.h>
-#include <libft/ft_str.h>
+#include "libft/ft_char.h"
+#include "libft/ft_str.h"
 
 static int	get_base_index(char c, const char *base)
 {

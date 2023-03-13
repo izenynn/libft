@@ -6,11 +6,11 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 23:38:12 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/10/22 09:06:20 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:27:01 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft/ft_str.h>
+#include "libft/ft_str.h"
 
 void	ft_striter(char *s, void (*f)(char *))
 {

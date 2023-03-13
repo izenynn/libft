@@ -6,11 +6,11 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:47:56 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/17 17:47:57 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:29:06 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft/ft_str.h>
+#include "libft/ft_str.h"
 
 char	*ft_strtrim(const char *s1, const char *set)
 {

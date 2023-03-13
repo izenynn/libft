@@ -6,11 +6,11 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:42:13 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 19:34:51 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:22:24 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft/ft_lst.h>
+#include "libft/ft_lst.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

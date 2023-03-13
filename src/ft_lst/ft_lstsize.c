@@ -6,11 +6,11 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:42:25 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 19:35:03 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:22:02 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft/ft_lst.h>
+#include "libft/ft_lst.h"
 
 int	ft_lstsize(t_list *lst)
 {
