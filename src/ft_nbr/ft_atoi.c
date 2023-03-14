@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:31:54 by dpoveda-          #+#    #+#             */
-/*   Updated: 2023/03/13 17:24:55 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 18:24:54 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_atoi(const char *str)
 		str++;
 	while (1)
 	{
-		digit = *str++ - '0';
+		digit = (unsigned char)(*str++) - '0';
 		if (digit > 9)
 			break ;
 		result = result * 10 + digit;
@@ -38,5 +38,5 @@ int	ft_atoi(const char *str)
 		if (result > 2147483648 && sign == -1)
 			return (0);
 	}
-	return (result * sign);
+	return ((int)result * sign);
 }

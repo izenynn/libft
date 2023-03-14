@@ -6,7 +6,7 @@
 #    By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/14 10:39:45 by dpoveda-          #+#    #+#              #
-#    Updated: 2021/10/21 23:43:22 by dpoveda-         ###   ########.fr        #
+#    Updated: 2023/03/14 19:46:41 by dpoveda-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,8 +21,17 @@ NAME = libft.a
 # **************************************************************************** #
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -Wpedantic -Wshadow -MMD
+
+AR = ar
 ARFLAGS = -rcs
+
+# **************************************************************************** #
+#                                   BINARIES                                   #
+# **************************************************************************** #
+
+RM = rm -rf
+MKDIR = mkdir -p
 
 # **************************************************************************** #
 #                                    PATHS                                     #
@@ -112,26 +121,30 @@ OBJS = $(addprefix $(OBJS_PATH)/, $(OBJS_NAME));
 #                                    RULES                                     #
 # **************************************************************************** #
 
-.PHONY: all clean fclean re
-
+PHONY := all
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar $(ARFLAGS) $@ $^
+	$(AR) $(ARFLAGS) $@ $^
 
 $(OBJS_PATH)/%.o: $(SRCS_PATH)/%.c | $(OBJS_DIRS)
 	$(CC) $(CFLAGS) -c $< -o $@ -I $(INCS_PATH)
 
 $(OBJS_DIRS): | $(OBJS_PATH)
-	mkdir -p $(OBJS_DIRS) 2> /dev/null
+	$(MKDIR) $(OBJS_DIRS)
 
 $(OBJS_PATH):
-	mkdir -p $(OBJS_PATH) 2> /dev/null
+	$(MKDIR) $(OBJS_PATH)
 
+PHONY += clean
 clean:
-	rm -rf $(OBJS_PATH)
+	$(RM) $(OBJS_PATH)
 
+PHONY += fclean
 fclean: clean
-	rm -rf $(NAME)
+	$(RM) $(NAME)
 
+PHONY += re
 re: fclean all
+
+.PHONY: $(PHONY)

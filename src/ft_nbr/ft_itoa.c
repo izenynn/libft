@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:39:59 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/10/21 17:34:05 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 18:27:49 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ char	*ft_itoa(int n)
 		sign++;
 	while (n / pow_ten / 10 && i++)
 		pow_ten *= 10;
-	out = (char *)malloc(i + sign + 1);
+	out = (char *)malloc(i + (size_t)sign + 1);
 	if (!out)
 		return (NULL);
 	if (sign == 1)

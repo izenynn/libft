@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:43:04 by dpoveda-          #+#    #+#             */
-/*   Updated: 2021/09/27 13:18:49 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 19:36:27 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	ft_putchar_fd(char c, int fd)
 {
-	return (write(fd, &c, 1));
+	return ((int)write(fd, &c, 1));
 }

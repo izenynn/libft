@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:43:18 by dpoveda-          #+#    #+#             */
-/*   Updated: 2023/03/13 17:24:31 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 17:56:43 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,6 @@ void	*ft_memset(void *b, int c, size_t len)
 
 	p = b;
 	while (len--)
-		*p++ = c;
+		*(p++) = (unsigned char)c;
 	return (b);
 }

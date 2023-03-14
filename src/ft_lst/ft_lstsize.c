@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:42:25 by dpoveda-          #+#    #+#             */
-/*   Updated: 2023/03/13 17:22:02 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 19:53:55 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	size_t	len;
+	int	len;
 
 	if (!lst)
 		return (0);

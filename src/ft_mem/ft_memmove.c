@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:42:49 by dpoveda-          #+#    #+#             */
-/*   Updated: 2023/03/13 17:24:19 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 18:11:30 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,22 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*save;
+	unsigned char		*d;
+	const unsigned char	*s;
 
 	if (!dst && !src)
 		return (NULL);
-	save = dst;
-	if (src < dst)
+	d = dst;
+	s = src;
+	if (s < d)
 	{
-		dst += len;
-		src += len;
+		d += len;
+		s += len;
 		while (len--)
-			*(unsigned char *)--dst = *(unsigned char *)--src;
+			*--d = *--s;
 	}
 	else
 		while (len--)
-			*(unsigned char *)dst++ = *(unsigned char *)src++;
-	return (save);
+			*d++ = *s++;
+	return (dst);
 }

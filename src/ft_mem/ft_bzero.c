@@ -6,7 +6,7 @@
 /*   By: dpoveda- <me@izenynn.com>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/17 17:32:30 by dpoveda-          #+#    #+#             */
-/*   Updated: 2023/03/13 17:22:58 by dpoveda-         ###   ########.fr       */
+/*   Updated: 2023/03/13 18:00:10 by dpoveda-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 
 void	ft_bzero(void *s, size_t n)
 {
+	unsigned char	*p;
+
+	p = s;
 	while (n--)
-		*(unsigned char *)s++ = 0;
+	{
+		*p = 0;
+		++p;
+	}
 }
