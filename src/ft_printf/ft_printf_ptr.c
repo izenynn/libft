@@ -78,7 +78,7 @@ void	ft_printf_ptr(t_print *tab)
 	while (pow)
 	{
 		c = n / pow;
-		if (c >= 0 && c <= 9)
+		if (c <= 9)
 			c += '0';
 		else
 			c += 87;
