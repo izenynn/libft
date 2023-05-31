@@ -22,7 +22,7 @@ NAME = libft.a
 
 CC = gcc
 CPPFLAGS = -MMD
-CFLAGS = -Wall -Wextra -Werror -Wpedantic -Wshadow
+CFLAGS = -Wall -Wextra -Werror -Wpedantic -Wshadow -Wimplicit
 
 AR = ar
 ARFLAGS = -rcs
