@@ -107,10 +107,10 @@ void	*ft_putmem_fd(void *addr, unsigned int size, int fd)
 			c_to_print = size;
 			size = 0;
 		}
-		ft_putaddr(addr + offset, fd);
+		ft_putaddr((char *)addr + offset, fd);
 		ft_putchar(':', fd);
 		ft_putchar(' ', fd);
-		ft_putdata(addr + offset, c_to_print, fd);
+		ft_putdata((char *)addr + offset, c_to_print, fd);
 		ft_putchar('\n', fd);
 		offset += 16;
 	}
