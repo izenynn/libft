@@ -84,7 +84,7 @@ SRC_NBR =	ft_atoi.c			ft_itoa.c				ft_intlen.c			\
 			ft_atoi_base.c		ft_itoa_base.c			ft_convert_base.c
 
 SRC_FD =	ft_putchar_fd.c		ft_putstr_fd.c			ft_putendl_fd.c		\
-			ft_putnbr_fd.c		ft_get_next_line.c
+			ft_putnbr_fd.c		ft_putmem_fd.c			ft_get_next_line.c
 
 SRC_LST =	ft_lstnew.c			ft_lstadd_front.c		ft_lstsize.c		\
 			ft_lstlast.c		ft_lstadd_back.c		ft_lstdelone.c		\
