@@ -132,6 +132,7 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 - ft_putstr_fd
 - ft_putendl_fd
 - ft_putnbr_fd
+- ft_putmem_fd
 - ft_get_next_line
 
 ### ft_lst
