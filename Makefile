@@ -153,7 +153,8 @@ fclean: clean
 	$(RM) $(NAME)
 
 PHONY += re
-re: fclean all
+re:: fclean
+re:: all
 
 -include $(DEP)
 
