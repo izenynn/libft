@@ -91,6 +91,7 @@ gcc (...)(.o files) -o (output file) -I ./libft/inc -L ./libft -lft
 - [ft_strlcat](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strlcat.c) - `size_t ft_strlcat(char *dst, const char *src, size_t dstsize)`
 - [ft_strchr](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strchr.c) - `char *ft_strchr(const char *s, int c)`
 - [ft_strrchr](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strrchr.c) - `char *ft_strrchr(const char *s, int c)`
+- [ft_strcmp](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strcmp.c) - `int ft_strcmp(const char *s1, const char *s2)`
 - [ft_strncmp](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strncmp.c) - `int ft_strncmp(const char *s1, const char *s2, size_t n)`
 - [ft_strnstr](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strnstr.c) - `char *ft_strnstr(const char *haystack, const char *needle, size_t len)`
 - [ft_strdup](https://github.com/izenynn/libft/blob/main/src/ft_str/ft_strdup.c) - `char *ft_strdup(const char *s1)`

@@ -70,10 +70,10 @@ SRC_CHAR =	ft_islower.c	ft_isupper.c	ft_isspace.c	ft_isalpha.c	\
 			ft_tolower.c	ft_toupper.c	ft_iscntrl.c	ft_isblank.c
 
 SRC_STR =	ft_strlen.c		ft_strcpy.c		ft_strlcpy.c	ft_strcat.c		\
-			ft_strlcat.c	ft_strchr.c		ft_strrchr.c	ft_strncmp.c	\
-			ft_strnstr.c	ft_strdup.c		ft_substr.c		ft_strjoin.c	\
-			ft_strtrim.c	ft_split.c		ft_strmapi.c	ft_striteri.c	\
-			ft_strmap.c		ft_striter.c	ft_strrev.c
+			ft_strlcat.c	ft_strchr.c		ft_strrchr.c	ft_strcmp.c		\
+			ft_strncmp.c	ft_strnstr.c	ft_strdup.c		ft_substr.c		\
+			ft_strjoin.c	ft_strtrim.c	ft_split.c		ft_strmapi.c	\
+			ft_striteri.c	ft_strmap.c		ft_striter.c	ft_strrev.c
 
 SRC_MEM =	ft_memset.c		ft_bzero.c		ft_memcpy.c		ft_memmove.c	\
 			ft_memchr.c		ft_memcmp.c		ft_calloc.c		ft_realloc.c
